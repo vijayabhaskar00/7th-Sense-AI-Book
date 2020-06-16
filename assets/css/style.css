@@ -39,9 +39,9 @@
     transition: all 0.5s ease 0s;
 }
 .header-btn {
-    border: 2px solid #49b970;
+    border: 2px solid #4e297d;
     border-radius: 50px;
-    color: #49b970;
+    color: #ffffff;
     display: inline-block;
     font-size: 12px;
     line-height: 1;
@@ -51,7 +51,7 @@
 }
 .header-btn:hover {
     color: #fff;
-    background-color: #49b970;
+    background-color: #4e297d;
 }
 .menu-bar {} .menu-bar ul {
     padding-top: 8px;
@@ -67,16 +67,16 @@
     text-transform: uppercase;
 }
 .menu-bar ul li:hover a {
-    color: #49b970
+    color: #4e297d
 }
 .header-area.stick {
-    background-color: #49b970;
+    background-color: #ffffff;
     padding: 20px 0;
     position: fixed;
     top: 0;
 }
 .stick .menu-bar ul li a {
-    color: #fff;
+    color: #000;
 }
 .stick .menu-bar ul li a:hover,
 .stick .menu-bar ul li.active a {
@@ -86,8 +86,8 @@
     color: #8e8888;
 }
 .stick .header-btn {
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #000;
+    color: #000;
 }
 .stick .header-btn:hover {
     border: 2px solid #fff;
@@ -179,7 +179,7 @@
     line-height: 55px;
 }
 .slide-text h2 span {
-    color: #49b970;
+    color: #4e297d;
 }
 .slide-text p {
     color: #8d8d8d;
@@ -190,9 +190,9 @@
     width: 52%;
 }
 .slider-btn {
-    border: 2px solid #49b970;
+    border: 2px solid #f5f5f5;
     border-radius: 50px;
-    color: #49b970;
+    color: #f5f5f5;
     display: inline-block;
     font-size: 12px;
     line-height: 1;
@@ -202,12 +202,12 @@
 }
 .slider-btn:hover {
     color: #fff;
-    background-color: #49b970;
+    background-color: #4e297d;
 }
 /* 4. Service area */
 
 .single-service span {
-    color: #49b970;
+    color: #4e297d;
     font-size: 36px;
 }
 .single-service h3 {
@@ -260,7 +260,7 @@
     margin: 0;
 }
 .about-content > h2 span {
-    color: #49b970;
+    color: #4e297d;
 }
 .about-content {
     padding: 93px 57px 0 0;
@@ -281,7 +281,7 @@
 .about-social a i {
     background-color: transparent;
     border-radius: 50px;
-    color: #49b970;
+    color: #4e297d;
     display: inline-block;
     font-size: 20px;
     height: 35px;
@@ -291,7 +291,7 @@
     width: 35px;
 }
 .about-social a i:hover {
-    background-color: #49b970;
+    background-color: #4e297d;
     color: #fff;
 }
 .about-img {
@@ -371,11 +371,11 @@
     margin: 0;
 }
 .single-testi-text.slick-current > p {
-    border: 2px solid #49b970;
+    border: 2px solid #4e297d;
 }
 .single-testi-text.slick-current > p::after {
     background: #fff none repeat scroll 0 0;
-    border-color: #49b970 currentcolor currentcolor #49b970;
+    border-color: #4e297d currentcolor currentcolor #4e297d;
     border-radius: 3px 0 0;
     border-style: solid none none solid;
     border-width: 2px medium medium 2px;
@@ -433,7 +433,7 @@
     padding: 0 160px 0 20px;
 }
 .subscribe-form .mc-form .clear input {
-    background-color: #49b970;
+    background-color: #4e297d;
     border: medium none;
     border-radius: inherit;
     bottom: 0;
@@ -475,7 +475,7 @@
     padding: 49px 0 43px;
 }
 .pricing-icon i {
-    color: #49b970;
+    color: #4e297d;
     font-size: 40px;
 }
 .pricing-value-title {
@@ -560,7 +560,7 @@
 /* 10. Counter area */
 
 .counter-icon i {
-    color: #49b970;
+    color: #4e297d;
     font-size: 28px;
 }
 .counter-icon {
@@ -571,7 +571,7 @@
     padding-left: 55px;
 }
 h3.counter {
-    color: #49b970;
+    color: #4e297d;
     font-size: 36px;
     font-weight: 800;
     line-height: 1;
