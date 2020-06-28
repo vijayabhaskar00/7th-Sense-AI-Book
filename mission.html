@@ -11,6 +11,22 @@
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
   <!-- all css here -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/magnific-popup.css" />
@@ -21,7 +37,11 @@
   <link rel="stylesheet" href="assets/css/bundle.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-year-calendar.min.css" />
+
+  <!-- all css here -->
   <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="assets/js/bootstrap-year-calendar.min.js"></script>
 </head>
 
 <body>
@@ -122,41 +142,34 @@
         </div>
       </div>
       <div class="row mb-40">
-        <div class="col-sm-6 text-center">
-          <div class="white-bg" style="padding: 2em 1em;">
+        <div class="col-sm-6 text-center" style="margin-top: 10px;">
+          <div class=" white-bg" style="padding: 2em 1em;">
             <h3>Number of Events</h3>
           </div>
-        </div>
-
-        <div class="col-sm-6 text-center">
-          <div class="white-bg" style="padding: 2em 1em;">
-            <h3>Number of Students</h3>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-40">
-        <div class="col-sm-6 text-center">
           <div class="white-bg" style="padding: 2em 1em;">
             <h3>50</h3>
           </div>
         </div>
-        <div class="row mb-40">
-          <div class="col-sm-6 text-center">
-            <div class="white-bg" style="padding: 2em 1em;">
-              <h3>1000</h3>
-            </div>
+        <div class="col-sm-6 text-center" style="margin-top: 10px;">
+          <div class="white-bg" style="padding: 2em 1em;">
+            <h3>Number of Students</h3>
+          </div>
+          <div class="white-bg" style="padding: 2em 1em;">
+            <h3>1000</h3>
           </div>
         </div>
       </div>
-
-      <div id="blog" class="blog-area pt-20 pb-90">
-        <div class="container">
+      <div>
+        <!--Have to add calendar code here-->
+      </div>
+      <div class="container">
+        <div id="blog" class="blog">
           <div class="section-title text-center">
             <h2>SESSIONS</h2>
           </div>
           <div class="row">
-            <div class="col-md-4 col-sm-4">
-              <div class="single-blog mb-30">
+            <div class="class col-sm-4">
+              <div class="single-blog">
                 <div class="blog-img">
                   <a href="#"><img src="images/events/01.jpeg" alt="" /></a>
                 </div>
@@ -166,20 +179,21 @@
                       <a href="#">Webinar series on Technology in Real Life.</a>
                     </h2>
                     <br>
-                    <p>
-
-                      This event was hosted in association with Vaave.com on 7th June, 2020.
-
-                    </p>
+                    <p>This event was hosted in association with Vaave.com on 7th June, 2020.</p>
                   </div>
-                  <!--<div class="blog-btn">
-                    <a href="blog-details.html">Read More</a>
-                  </div> -->
+                  <!--Button Begins Here-->
+                  <div class="col text-center">
+                    <div style="padding-bottom: 20px;">
+                      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Learn
+                        more</a>
+                    </div>
+                  </div>
+                  <!--Button Ends Here-->
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="single-blog mb-30">
+            <div class="class col-sm-4">
+              <div class="single-blog">
                 <div class="blog-img">
                   <a href="#"><img src="images/events/02.jpeg" alt="" /></a>
                 </div>
@@ -193,14 +207,19 @@
                       This event was hosted with Raghu Institute of Technology on 12th June, 2020.
                     </p>
                   </div>
-                  <!-- <div class="blog-btn">
-                    <a href="#">Read More</a>
-                  </div> -->
+                  <!--Button Begins Here-->
+                  <div class="col text-center">
+                    <div style="padding-bottom: 20px;">
+                      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Learn
+                        more</a>
+                    </div>
+                  </div>
+                  <!--Button Ends Here-->
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="single-blog mb-30">
+            <div class="col-sm-4">
+              <div class="single-blog">
                 <div class="blog-img">
                   <a href="#"><img src="images/events/03.jpeg" alt="" /></a>
                 </div>
@@ -214,39 +233,46 @@
                       This event was hosted with Ifocus Mission on 02nd May, 2020.
                     </p>
                   </div>
-                  <!-- <div class="blog-btn">
-                    <a href="blog3.html">Read More</a>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-sm-4">
-                <div class="single-blog mb-30">
-                  <div class="blog-img">
-                    <a href="#"><img src="images/events/04.jpeg" alt="" /></a>
-                  </div>
-                  <div class="blog-info-all">
-                    <div class="blog-info">
-                      <h2>
-                        <a href="#">Webinar series on Technology in Real Life.</a>
-                      </h2>
-                      <br>
-                      <p>
-
-                        This event was hosted in association with Vaave.com on 7th June, 2020.
-
-                      </p>
+                  <!--Button Begins Here-->
+                  <div class="col text-center">
+                    <div style="padding-bottom: 20px;">
+                      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Learn
+                        more</a>
                     </div>
-                    <!--<div class="blog-btn">
-                      <a href="blog-details.html">Read More</a>
-                    </div> -->
                   </div>
+                  <!--Button Ends Here-->
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="single-blog mb-30">
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="single-blog">
+                <div class="blog-img">
+                  <a href="#"><img src="images/events/04.jpeg" alt="" /></a>
+                </div>
+                <div class="blog-info-all">
+                  <div class="blog-info">
+                    <h2>
+                      <a href="#">Webinar series on Technology in Real Life.</a>
+                    </h2>
+                    <br>
+                    <p>This event was hosted in association with Vaave.com on 7th June, 2020.</p>
+                  </div>
+                  <!--Button Begins Here-->
+                  <div class="col text-center">
+                    <div style="padding-bottom: 20px;">
+                      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Learn
+                        more</a>
+                    </div>
+                  </div>
+                  <!--Button Ends Here-->
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="single-blog">
                 <div class="blog-img">
                   <a href="#"><img src="images/events/05.jpeg" alt="" /></a>
                 </div>
@@ -260,14 +286,19 @@
                       This event was hosted with Gulf Medical University on 21st June, 2020.
                     </p>
                   </div>
-                  <!-- <div class="blog-btn">
-                    <a href="blog3.html">Read More</a>
-                  </div> -->
+                  <!--Button Begins Here-->
+                  <div class="col text-center">
+                    <div style="padding-bottom: 20px;">
+                      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Learn
+                        more</a>
+                    </div>
+                  </div>
+                  <!--Button Ends Here-->
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="single-blog mb-30">
+            <div class="col-sm-4">
+              <div class="single-blog">
                 <div class="blog-img">
                   <a href="#"><img src="images/events/06.jpeg" alt="" /></a>
                 </div>
@@ -281,14 +312,22 @@
                       This event was hosted with BITS PILANI on 30th May, 2020.
                     </p>
                   </div>
-                  <!-- <div class="blog-btn">
-                    <a href="blog3.html">Read More</a>
-                  </div> -->
+                  <!--Button Begins Here-->
+                  <div class="col text-center">
+                    <div style="padding-bottom: 20px;">
+                      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Learn
+                        more</a>
+                    </div>
+                  </div>
+                  <!--Button Ends Here-->
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="single-blog mb-30">
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="single-blog">
                 <div class="blog-img">
                   <a href="#"><img src="images/events/07.jpeg" alt="" /></a>
                 </div>
@@ -302,66 +341,71 @@
                       This event was hosted with St. Mary's Group on 19th June, 2020.
                     </p>
                   </div>
-                  <!-- <div class="blog-btn">
-                    <a href="blog3.html">Read More</a>
-                  </div> -->
+                  <!--Button Begins Here-->
+                  <div class="col text-center">
+                    <div style="padding-bottom: 20px;">
+                      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Learn
+                        more</a>
+                    </div>
+                  </div>
+                  <!--Button Ends Here-->
                 </div>
               </div>
             </div>
           </div>
+          <br />
         </div>
       </div>
-    </div>
-  </div>
 
-  <footer id="contact" class="footer-area black-bg" style="width: 100%;">
-    <div class="container">
-      <div class="footer-top text-center">
-        <div class="footer-logo">
-          <a href="#"><img src="assets/img/logo/logo.png" alt="" /></a>
+
+      <footer id="contact" class="footer-area black-bg" style="width: 100%;">
+        <div class="container">
+          <div class="footer-top text-center">
+            <div class="footer-logo">
+              <a href="#"><img src="assets/img/logo/logo.png" alt="" /></a>
+            </div>
+            <div class="footer-menu">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/surendra.tipparaju">FACEBOOK</a>
+                  </li>
+                  <li><a href="https://twitter.com/surentips">TWITTER</a></li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/surendratipparaju/">LINKEDIN</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="contact">
+              <ul>
+                <li>EMAIL : <a href="#"> tipparaju@hotmail.com</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="footer-menu">
-          <nav>
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/surendra.tipparaju">FACEBOOK</a>
-              </li>
-              <li><a href="https://twitter.com/surentips">TWITTER</a></li>
-              <li>
-                <a href="https://www.linkedin.com/in/surendratipparaju/">LINKEDIN</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="footer-bottom text-center">
+          <div class="container">
+            <div class="copyright">
+              <p>
+                Copyright©
+                <a href="#" target="blank">Surendra Tipparaju</a> 2020.All right
+                reserved
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="contact">
-          <ul>
-            <li>EMAIL : <a href="#"> tipparaju@hotmail.com</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom text-center">
-      <div class="container">
-        <div class="copyright">
-          <p>
-            Copyright©
-            <a href="#" target="blank">Surendra Tipparaju</a> 2020.All right
-            reserved
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- all js here -->
-  <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/jquery.counterup.min.js"></script>
-  <script src="assets/js/waypoints.min.js"></script>
-  <script src="assets/js/ajax-mail.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/main.js"></script>
+      </footer>
+      <!-- all js here -->
+      <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.magnific-popup.min.js"></script>
+      <script src="assets/js/jquery.counterup.min.js"></script>
+      <script src="assets/js/waypoints.min.js"></script>
+      <script src="assets/js/ajax-mail.js"></script>
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/main.js"></script>
 </body>
 
 </html>
