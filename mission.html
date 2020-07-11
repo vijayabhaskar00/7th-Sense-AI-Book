@@ -38,6 +38,16 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
 
+  <style>
+    @media only screen and (max-width: 768px) {
+
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+  </style>
+
   <!-- all js here -->
   <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -45,75 +55,69 @@
   <link href='./assets/fullcalendar/main.css' rel='stylesheet' />
   <script src='./assets/fullcalendar/main.js'></script>
   <script>
-
     document.addEventListener('DOMContentLoaded', function () {
       var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl,
+      var calendar = new FullCalendar.Calendar(calendarEl, {
 
-        {
-          headerToolbar: {
-            left: 'dayGridMonth,timeGridWeek,timeGridDay',
-            center: 'title',
-            right: 'prevYear,prev,next,nextYear'
+        headerToolbar: {
+          start: 'today',
+          center: 'title',
+          end: 'prev,next'
+        },
+
+        selectable: true,
+
+        // Here, we define our events.
+        // For more info, refer https://fullcalendar.io/docs/event-parsing
+
+        events: [
+          {
+            title: 'Technology in Real Life.',
+            start: '2020-06-07',
+            end: '2020-06-07',
+            url: 'https://www.google.com'
           },
-          footerToolbar: {
-            right: 'prev,next'
+          {
+            title: 'Two Day Technical Series on AI/LM though Case Studies',
+            start: '2020-06-12',
+            end: '2020-06-13',
+            url: 'https://www.google.com'
           },
-          selectable: true,
-          // Here, we define our events.
-          // For more info, refer https://fullcalendar.io/docs/event-parsing
-          events: [
-            {
-              title: 'Technology in Real Life.',
-              start: '2020-06-07',
-              end: '2020-06-07',
-              url: 'https://www.google.com'
-            },
-            {
-              title: 'Two Day Technical Series on AI/LM though Case Studies',
-              start: '2020-06-12',
-              end: '2020-06-13',
-              url: 'https://www.google.com'
-            },
-            {
-              title: 'Session on Artificial Intelligence',
-              start: '2020-05-02',
-              end: '2020-05-02',
-              url: 'https://www.google.com'
-            },
-            {
-              title: '7 Steps to Enable AI in your Enterprise',
-              start: '2020-04-17',
-              end: '2020-04-17',
-              url: 'https://www.google.com'
-            },
-            {
-              title: 'Webinar on Emerging Scenarios & Technology Disprutors for Future of Healthcare',
-              start: '2020-06-21',
-              end: '2020-06-21',
-              url: 'https://www.google.com'
-            },
-            {
-              title: 'AI Session on Data Engineering Overview',
-              start: '2020-05-30',
-              end: '2020-05-30',
-              url: 'https://www.google.com'
-            },
-            {
-              title: 'AI Insider Overview',
-              start: '2020-06-19',
-              end: '2020-06-19',
-              url: 'https://www.google.com'
-            }
-
-          ]
-
-        }
-
+          {
+            title: 'Session on Artificial Intelligence',
+            start: '2020-05-02',
+            end: '2020-05-02',
+            url: 'https://www.google.com'
+          },
+          {
+            title: '7 Steps to Enable AI in your Enterprise',
+            start: '2020-04-17',
+            end: '2020-04-17',
+            url: 'https://www.google.com'
+          },
+          {
+            title: 'Webinar on Emerging Scenarios & Technology Disprutors for Future of Healthcare',
+            start: '2020-06-21',
+            end: '2020-06-21',
+            url: 'https://www.google.com'
+          },
+          {
+            title: 'AI Session on Data Engineering Overview',
+            start: '2020-05-30',
+            end: '2020-05-30',
+            url: 'https://www.google.com'
+          },
+          {
+            title: 'AI Insider Overview',
+            start: '2020-06-19',
+            end: '2020-06-19',
+            url: 'https://www.google.com'
+          }
+        ],
+      }
       );
       calendar.render();
     });
-
   </script>
 
 </head>
@@ -235,9 +239,13 @@
       </div>
       <div class="container">
         <div class="section-title text-center">
-          <h2>EVENT CALENDAR</h2>
+          <div>
+            <h3>EVENT CALENDAR</h3>
+            <br />
+          </div>
         </div>
-        <div id='calendar'></div>
+
+        <div id='calendar' class="col-"></div>
         <br /><br /><br />
       </div>
       <div class="container">
